@@ -3,10 +3,16 @@
 // Pode ou não receber parâmetros
 // Pode ou não retornar dados
 
-function gerarNome(nome, sobrenome, idade) {
-    console.log('Nome: ', nome + sobrenome)
-    console.log('Idade: ', idade)
+// function gerarNome(nome, sobrenome, idade) {
+//     console.log('Nome: ', nome + sobrenome)
+//     console.log('Idade: ', idade)
+// }
+
+function gerarNome(nome, sobrenome) {
+    return('Nome: ' + nome + sobrenome)
 }
 
-gerarNome('Mateus', ' Viechele', 22);
-gerarNome('Fernando', ' Ferreira', 45)
+// console.log(gerarNome('Mateus', ' Viechele'));
+
+const nomeGerado = gerarNome('Pedro', ' Carvalho')
+console.log(nomeGerado);
